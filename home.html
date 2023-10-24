@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/72bfdcd20e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html">
+                <i class="fa-regular fa-face-smile"></i>
+            </a>
+        </div>
+        <nav>
+            <ul class="menuList">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="sec-01">
+        <div class="main-container">
+            <div class="title-section">
+                <div class="title">
+                    <h2>Hi,<br>
+                        I'm Hinako</h2>
+                    <h3>I'm seeking a front-end developer job</h3>
+                </div>
+                <div class="btn">
+                    <a href="#" class="btnlinestretches2">About Me</a> 
+                </div>
+                <div class="icons">
+                    <ul>
+                    <li><a href="www.linkedin.com/in/hinako-nakamura-34aa82216"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="image-section">
+                <i class="fa-regular fa-face-smile"></i>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="home-skill">
+        <div class="container">
+            <h4>My skills</h4>
+            <div class="skill-list">
+                <div class="skill-list-1">
+                    <div class="skills">
+                        <i class="fa-brands fa-html5"></i>
+                        <h5>HTML</h5>
+                        
+                    </div>
+                    <div class="skills">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h5>CSS</h5>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-brands fa-square-js"></i>
+                        <h5>Javascript</h5>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-brands fa-php"></i>
+                        <h5>PHP</h5>
+                    </div>
+                </div>
+                <div class="skill-list-2">
+                    <div class="skills">
+                        <i class="fa-brands fa-java"></i>
+                        <h5>Java</h5>
+                    </div>
+                    <div class="skills">
+                        <img src="mysql.png" class="database-img">
+                        <h5>MySQL</h5>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-brands fa-figma"></i>
+                        <h5>Figma</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-works">
+        <div class="container">
+            <h4>My works</h4>
+
+        </div>
+    </section>
+
+    <section class="home-contact">
+        <div class="container">
+            <h4>Contacts</h4>
+            <div class="contact-content">
+                <div class="contact-detail">    
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <p>+60 1151180408&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p> 
+                </div>
+                <div class="contact-detail">     
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>nakahina2014@gmail.com</p>              
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-name">
+                <h5>Hinako Nakamura</h5>
+                <p>Taylor's University</p>
+            </div>
+
+            <div class="footer-icons">
+                <ul>
+                    <li><a href="www.linkedin.com/in/hinako-nakamura-34aa82216"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    ScrollReveal({
+        reset: true,
+        delay: 200,
+        duration: 2000,
+        distance: "30px",
+    });
+
+    ScrollReveal().reveal(".title-section .title h2, .menuList li, h4", {
+        delay: 80,
+        origin: "top",
+        interval: 200,
+    });
+
+    ScrollReveal().reveal(".title-section .title h2", {
+        delay: 100,
+        origin: "top",
+    });
+
+    ScrollReveal().reveal(".title-section .title h3, .btn a, .footer-name, .contact-detail, .skills", {
+        delay: 200,
+        origin: "bottom",
+    });
+
+    ScrollReveal().reveal(".icons ul li, .footer-icons ul li", {
+        delay: 100,
+        origin: "bottom",
+        interval: 200,
+        distance: "50px",
+    });
+
+    ScrollReveal().reveal(".image-section", {
+        delay: 400,
+        origin: "right",
+        distance: "80px",
+    });
+
+
+   
+
+   
+</script>
+
+</body>
+</html>

@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "", sans-serif;
+  }
+
+
+body {
+    background-color: white;
+}
+
+.container {
+  text-align: center;
+  
+}
+
+.container h4 {
+  font-size: 36px;
+}
+
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: black;
+}
+
+.logo a {
+   font-size: 25px;
+   color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-right: 20px;
+    transition: all 0.3s;
+    display: block;
+
+}
+
+nav ul li a:hover {
+    color: rgb(99, 99, 99);
+}
+
+
+/* MAIN */
+.sec-01 .main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sec-01 {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.title-section h2 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    line-height: 70px;
+}
+
+.title-section h3 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin-bottom: 20px;
+}
+
+.btnlinestretches2{
+    /*線の基点とするためrelativeを指定*/
+  position:relative;
+    /*ボタンの形状*/  
+  color:#333;
+    padding: 10px 30px;
+  
+  display:inline-block;
+    text-decoration: none;
+    outline: none;
+   
+}
+
+/*線の設定*/
+.btnlinestretches2::before,
+.btnlinestretches2::after {
+  content:'';
+    /*絶対配置で線の位置を決める*/
+  position:absolute;
+    /*事前に出現させる線の形状*/
+  border:solid #333;
+  width:10px;
+  height:10px;
+    /*アニメーションの指定*/
+  transition:all 0.3s ease-in-out;
+}
+
+.btnlinestretches2::before{
+    /*事前に出現させる線の位置*/
+  top:0;
+  left:0;
+    /*事前に出現させる線の形状*/
+  border-width:2px 0 0 2px;
+}
+
+.btnlinestretches2::after{
+    /*事前に出現させる線の位置*/
+  bottom:0;
+  right:0;
+    /*事前に出現させる線の形状*/
+  border-width:0 2px 2px 0;
+}
+
+/*hoverした際の線の形状*/
+.btnlinestretches2:hover::before,
+.btnlinestretches2:hover::after{
+  width:calc(100% - 2px);
+  height:calc(100% - 2px);
+  border-color:#666
+}
+
+
+.icons {
+    margin: 0 12px;
+    
+}
+
+.icons ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.icons a{
+    color: black;
+    font-size: 30px;
+    margin-right: 15px;
+    transition: all 0.3s;
+    display: block;
+}
+
+.icons a:hover {
+    transform: translateY(-5px);
+}
+
+.image-section {
+  font-size: 250px;
+}
+
+
+
+/* HOME-WORKS */
+.home-works .container{
+    background-color: white;
+    height: 300px;
+}
+
+.home-works .container h4 {
+  padding-top: 40px;
+  color: black;
+}
+
+/* HOME-SKILL */
+.home-skill {
+  background-color: white;
+  height: 530px;
+}
+
+.home-skill h4 {
+  margin-bottom: 50px;
+  padding-top: 40px;
+  color: black;
+}
+
+.skill-list-1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.skill-list-2 {
+  display: flex;
+  justify-content: center;
+}
+
+
+.skill-list i {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.skills {
+  margin-right: 40px;
+  border: 3px solid black;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.database-img {
+  width: 60px;
+}
+
+/* HOME-CONTACT */
+.home-contact .container {
+  background-color: #666;
+  height: 220px;
+  margin: 30px;
+}
+
+.home-contact .container h4 {
+  padding-top: 30px;
+  color: white;
+}
+
+.contact-content {
+  margin-top: 25px;
+  
+}
+
+.contact-detail {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-detail {
+  display: flex;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  
+}
+
+
+
+.contact-detail i {
+  font-size: 30px;
+  margin-right: 5%;
+  font-weight: 300;
+
+}
+
+/* FOOTER */
+
+.footer-container {
+  background-color: #333;
+  height: 150px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-name {
+  margin-left: 40px;
+}
+
+.footer-name h5 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+
+.footer-icons {
+  margin-right: 20px;
+}
+
+.footer-icons ul{
+  list-style: none;
+  display: flex;
+}
+
+.footer-icons ul li {
+  display: inline-block;
+}
+
+
+.footer-icons ul li a{
+  color: white;
+  font-size: 40px;
+  margin-right: 40px;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.footer-icons ul li a:hover {
+  transform: translateY(-5px);
+}
