@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/72bfdcd20e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html">
+                <i class="fa-regular fa-face-smile"></i>
+            </a>
+        </div>
+        <nav>
+            <ul class="menuList">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="works.html">Works</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="work1" id="works">
+        <div class="container">
+            <h2>Java コンソールアプリ</h2>
+            <h3>論文検索アプリ</h3>
+                <div class="content">
+                    <div class="image">
+                        <img src="img/java-app.png">
+                    </div>
+                    <div class="text-box">
+                        
+                        <p>Javaを用いて論文検索ができるコンソールアプリを作成しました。ユーザーは論文を登録、削除、表示することができます。</p>
+                        <div class="btn">
+                            <a href="https://github.com/nakahina/thesis-system">コードを見る</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="work2" id="works">
+        <div class="container">
+            <h2>PHP トラベルブログ</h2>
+                <div class="content">
+                    <div class="image">
+                        <img class="img1" src="img/Travel-Blog.png">
+                        <img class="img2" src="img/Add-New-Articles.png">
+                    </div>
+                    <div class="text-box">
+                        <p>PHPとMySQLを使用したブログを作成しました。投稿ページに書き込んだ内容はデータベースに保存されて、ホームページで表示される仕組みになっています。また、ユーザーはそれぞれの投稿にコメントをすることができます。</p>
+                        <div class="btn">
+                            <a href="https://github.com/nakahina/travel-blog">コードを見る</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="work3" id="works">
+        <div class="container">
+            <h2>HTML・CSSのウェブサイト</h2>
+                <div class="content">
+                    <div class="image">
+                        <img src="img/website.png">
+                    </div>
+                    <div class="text-box">
+                        <p></p>
+                        <div class="btn">
+                            <a href="https://majestic-stardust-6053b8.netlify.app/">サイトに移動</a>
+                            <a href="https://github.com/nakahina/climate-change-website">コードを見る</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="work4" id="works">
+        <div class="container">
+            <h2>Figma アプリデザイン</h2>
+                <div class="content">
+                    <div class="text-box">
+                        <h3>動物園の公式アプリ</h3>
+                        <div class="image">
+                            <img src="img/zoo-app.png">
+                        </div>
+                        <p>AR機能を備えたアプリのデザインを作成しました。動物園の地図案内、動物図鑑、ARカメラなどの機能があります。</p>
+                        <div class="btn">
+                            <a href="https://www.figma.com/file/XApaXt9zUMkWHBKq1IJ9p7/HCI-Midterm-test?type=design&node-id=0%3A1&mode=design&t=OT8vRZqLhahOGqTb-1">もっと見る</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="work5" id="works">
+        <div class="container">
+                <div class="text-box">
+                    <h3>セキュリティーアプリ</h3>
+                    <div class="image">
+                        <img src="img/security-app.png">
+                    </div>
+                    <p>大学の課題として、70人にサイバーセキュリティに関する意識調査をしたところ、データの保護、パスワード管理、公共WiFiの使用に問題がある事がわかりました。
+                        解決策として、データの暗号化、パスワードマネージャー、VPNに接続できるアプリをデザインしました。
+                    </p>
+                    <div class="btn">
+                        <a href="https://www.figma.com/file/OU25AdBfypWmMBabKJ1arc/Untitled?type=design&mode=design&t=OT8vRZqLhahOGqTb-1">もっと見る</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-name">
+                <h5>Hinako Nakamura</h5>
+                <p>Taylor's University</p>
+            </div>
+
+            <div class="footer-icons">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/hinako-nakamura-34aa82216"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/nakahina"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            delay: 200,
+            duration: 2000,
+            distance: "30px",
+        });
+
+        ScrollReveal().reveal(".menuList li", {
+            delay: 80,
+            origin: "top",
+            interval: 200,
+        });
+
+        ScrollReveal().reveal("h2, h3, .image", {
+            delay: 100,
+            origin: "top",
+        });
+
+        ScrollReveal().reveal(".btn, p, .footer-name", {
+            delay: 200,
+            origin: "bottom",
+        });
+
+        ScrollReveal().reveal(".icons ul li, .footer-icons ul li", {
+            delay: 100,
+            origin: "bottom",
+            interval: 200,
+            distance: "50px",
+        });
+    
+    </script>
+
+</body>
+</html>
