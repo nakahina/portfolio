@@ -233,51 +233,55 @@ nav ul li a:hover {
 }
 
 /* works page */
-.work1 .image img {
+.work1 {
+  background-color: rgb(234, 234, 234);
+}
+
+.work2 .image img {
   width: 100%;
 }
 
-.work2 .image .img1 {
+.work3 .image .img1 {
   width: 50%;
   padding-right: 15px;
 }
 
-.work2 .image .img2 {
+.work3 .image .img2 {
   width: 50%;
   height: 100%;
   padding-left: 15px;
 }
 
-.work2 .image {
+.work3 .image {
   display: flex;
   align-items: center;
 }
 
-.work2 {
+.work3 {
   background-color: rgb(234, 234, 234);
 }
 
 
 
-.work3 .image img {
+.work4 .image img {
   width: 300px;
 }
 
-.work3 .btn a {
+.work4 .btn a {
   margin-right: 15px;
 }
 
 
 
-.work4 .image img {
+.work5 .image img {
   width: 100%;
 }
 
-.work4 {
+.work5 {
   background-color:  rgb(234, 234, 234);
 }
 
-.work5 .image img {
+.work6 .image img {
   width: 100%;
 
 }
