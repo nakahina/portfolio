@@ -5,6 +5,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/72bfdcd20e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
@@ -42,11 +43,12 @@
             </div>
     
             <div class="image-section">
-                <i class="fa-regular fa-face-smile"></i>
+                <div class="shape-1">
+                    <img src="img/avator.png">
+                </div>  
             </div>
         </div>
     </section>
-
 
     <section class="home-skill">
         <div class="container">
@@ -70,7 +72,7 @@
                         <i class="fa-brands fa-square-js"></i>
                         <h5>Javascript</h5>
                         <p>個人開発歴<br>
-                            ３ヶ月</p>
+                            4ヶ月</p>
                     </div>
                     <div class="skills">
                         <i class="fa-brands fa-php"></i>
@@ -103,17 +105,32 @@
         </div>
     </section>
 
+    <section class="home-certificate">
+        <div class="container">
+            <h4>Certificates</h4>
+            <div class="img-certificate">
+                <img src="img/certificate_webDesign.png" >
+                <img src="img/certificate_learnJS.png">
+                <img src="img/certificate_interactiveJS.png">
+                  
+            </div>       
+        </div>
+    </section>
+
 
     <section class="home-contact">
         <div class="container">
-            <h4>Contacts</h4>
-            <div class="contact-content">
-                <div class="contact-detail">     
-                        <i class="fa-regular fa-envelope"></i>
-                        <p>nakahina2014@gmail.com</p>              
-                </div>
-            </div>
-        </div>
+            <h4>Contact</h4>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="2fb8d70c-2806-48c0-b69a-92e42fad8b27">
+
+                <input type="text" name="name" placeholder="Your Name" class="inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="inputs" required>
+                <textarea name="message" placeholder="Your Message" rows="8"></textarea>
+                <button type="submit">Submit</button>    
+            </form>
+            
+    </div>
     </section>
 
     <footer>
@@ -160,7 +177,7 @@
         origin: "bottom",
     });
 
-    ScrollReveal().reveal(".icons ul li, .footer-icons ul li", {
+    ScrollReveal().reveal(".icons ul li, .footer-icons ul li, .home-certificate .container .img-certificate img", {
         delay: 100,
         origin: "bottom",
         interval: 200,
