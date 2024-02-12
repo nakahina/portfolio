@@ -6,20 +6,17 @@
     
   }
 
-
 body {
     background-color: white;
 }
 
 .container {
-  text-align: center;
-  
+  text-align: center;  
 }
 
 .container h4 {
   font-size: 36px;
 }
-
 
 /* HEADER */
 header {
@@ -40,7 +37,6 @@ nav ul {
     list-style: none;
 }
 
-
 nav ul li a {
     position: relative;
     text-decoration: none;
@@ -55,7 +51,6 @@ nav ul li a {
 nav ul li a:hover {
     color: rgb(99, 99, 99);
 }
-
 
 /* MAIN */
 .sec-01 .main-container {
@@ -74,8 +69,6 @@ nav ul li a:hover {
     align-items: center;
     background-color: #eeeceb;
 }
-
-
 
 .title-section h2 {
     font-size: 50px;
@@ -105,8 +98,6 @@ nav ul li a:hover {
 .btn a:hover {
   padding: 12px 25px
 }
-
-
 
 .icons ul li {
     list-style: none;
@@ -138,15 +129,20 @@ nav ul li a:hover {
   
 }
 
-
 /* HOME-SKILL */
 .home-skill {
   background-color: white;
-  height: 580px;
+  padding-bottom: 100px;
+}
+
+.home-skill .container {
+  width: 100%;
+  height: 100%;
+  
 }
 
 .home-skill h4 {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding-top: 50px;
   color: black;
   
@@ -161,33 +157,26 @@ nav ul li a:hover {
   font-size: 13px;
 }
 
-.skill-list-1 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.skill-list-2 {
-  display: flex;
+.skill-list {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows:  1fr 1fr;
+  gap: 20px 20px;
   justify-content: center;
 }
 
 
 .skill-list i {
   font-size: 60px;
-  margin-bottom: 10px;
 }
 
 .skills {
-  margin-right: 40px;
   border: 3px solid black;
   padding: 25px;
   border-radius: 15px;
 }
 
-.skills:last-child {
-  margin-right: 0px;
-}
 
 .database-img {
   width: 60px;
@@ -205,15 +194,14 @@ nav ul li a:hover {
   display: flex; /* 画像を縦並びにする */
   flex-direction: column; /* 画像を縦並びにする */
   margin: 20px auto; /* ブロック要素を中央よせ */
-  width: 40%;
+  width: 70%;
+  max-width: 500px;
 }
 
 .home-certificate .container .img-certificate img {
   border: 5px solid #333;
   margin-bottom: 30px;
 }
-
-
 
 /* HOME-CONTACT */
 .home-contact .container {
@@ -238,7 +226,8 @@ nav ul li a:hover {
 
 .home-contact .container .contact-form .inputs {
   border-radius: 50px;
-  width: 400px;
+  max-width: 400px;
+  width: 70%;
   height: 40px;
   border: none;
   outline: none;
@@ -249,7 +238,8 @@ nav ul li a:hover {
 .home-contact .container .contact-form textarea {
   padding-top: 15px;
   border-radius: 20px;
-  width: 400px;
+  max-width: 400px;
+  width: 70%;
   border: none;
   outline: none;
   padding-left: 25px;
@@ -263,7 +253,6 @@ nav ul li a:hover {
   background-color: #333;
   color: white;
   border: none;
-  margin-bottom: 40px;
   cursor: pointer;
 }
 
@@ -271,15 +260,19 @@ nav ul li a:hover {
   background-color:#9e9e9e;
 }
 
-
-
 /* works page */
 .work1 {
   background-color: rgb(234, 234, 234);
 }
 
+.work1 .image img {
+  width: 100%;
+  max-width: 500px;
+}
+
 .work2 .image img {
   width: 100%;
+  
 }
 
 .work3 .image .img1 {
@@ -291,6 +284,7 @@ nav ul li a:hover {
   width: 50%;
   height: 100%;
   padding-left: 15px;
+
 }
 
 .work3 .image {
@@ -302,20 +296,18 @@ nav ul li a:hover {
   background-color: rgb(234, 234, 234);
 }
 
-
-
 .work4 .image img {
-  width: 300px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .work4 .btn a {
   margin-right: 15px;
 }
 
-
-
 .work5 .image img {
   width: 100%;
+  
 }
 
 .work5 {
@@ -324,21 +316,21 @@ nav ul li a:hover {
 
 .work6 .image img {
   width: 100%;
+  
 
 }
 
 #works {
+  padding-top: 80px;
+  padding-bottom: 80px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 80px 100px;
 }
 
 #works .container {
-  display: flex; /* "main-title","content", .media-icons要素に対して */
-  justify-content: center; /* 水平中央揃え */
-  align-items: center;
-  flex-direction: column; /* 横並びを縦並びにする */
+  padding: 0px 20px;
+  max-width: 800px;
+  
 }
 
 #works h2 {
@@ -353,12 +345,7 @@ nav ul li a:hover {
   margin-top: 30px;
 }
 
-
-
-
-
 /* FOOTER */
-
 .footer-container {
   background-color: #333;
   height: 150px;
@@ -377,7 +364,6 @@ nav ul li a:hover {
   margin-bottom: 5px;
 }
 
-
 .footer-icons {
   margin-right: 20px;
 }
@@ -391,7 +377,6 @@ nav ul li a:hover {
   display: inline-block;
 }
 
-
 .footer-icons ul li a{
   color: white;
   font-size: 40px;
@@ -403,3 +388,52 @@ nav ul li a:hover {
 .footer-icons ul li a:hover {
   transform: translateY(-5px);
 }
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) { /*画面サイズが768px以下になったら*/
+  .main-container {
+      flex-direction: column;
+      padding-top: 70px;
+  }
+
+  .title-section {
+      text-align: center;
+  }
+
+  .skill-list {
+    display: grid;
+    height: 300px;
+    grid-template-columns: 150px 150px;
+    grid-template-rows:  1fr 1fr 1fr;
+    gap: 20px 20px;
+    justify-content: center;
+  }
+
+  .home-skill {
+    padding-bottom: 300px;
+  }
+
+  .footer-icons ul li a {
+    margin-right: 20px;
+  }
+  
+  .work4 .image img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .title h2 {
+    font-size: 35px;
+  }
+  
+  .title h3 {
+    font-size: 15px;
+  }
+  }
